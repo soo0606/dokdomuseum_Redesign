@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>독도박물관</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- aos -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- 제이쿼리 -->
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="wrap">
+  <!-- topbar -->
+  <div class="top-bar-section">
+    <div class="container">
+      <div class="logo-box"><a href="#"><img src="logo.png" alt="logo"></a></div>
+      <nav class="top-menu-box">
+        <ul>
+          <li class="top-menu top-menu-1"><a href="#" onclick="return false"><span class="top-m-list top-m-list-1">박물관소개</span></a></li>
+          <li class="top-menu top-menu-2"><a href="#" onclick="return false"><span class="top-m-list top-m-list-2">독도</span></a></li>
+          <li class="top-menu top-menu-3"><a href="#" onclick="return false"><span class="top-m-list top-m-list-3">교육·행사</span></a></li>
+          <li class="top-menu top-menu-4"><a href="#" onclick="return false"><span class="top-m-list top-m-list-4">커뮤니티</span></a></li>
+        </ul>
+        <!-- menu-2 -->
+        <div class="menu-2-section">
+          <div class="container">
+            <nav class="top-menu-2-box">
+              <ul class="menu-2-list-box menu-2-list-box-1">
+                <li class="m-2-li m-2-li-1 m-2-li-1-1"><a href="#" onclick="return false"><span class="li-text li-text-1 li-text-1-1">인사말</span></a></li>
+                <li class="m-2-li m-2-li-1 m-2-li-1-2"><a href="#" onclick="return false"><span class="li-text li-text-1 li-text-1-2">조직 및 업무</span></a></li>
+                <li class="m-2-li m-2-li-1 m-2-li-1-3"><a href="#" onclick="return false"><span class="li-text li-text-1 li-text-1-3">연혁</span></a></li>
+                <li class="m-2-li m-2-li-1 m-2-li-1-4"><a href="#" onclick="return false"><span class="li-text li-text-1 li-text-1-4">박물관 MI</span></a></li>
+                <li class="m-2-li m-2-li-1 m-2-li-1-5"><a href="#" onclick="return false"><span class="li-text li-text-1 li-text-1-5">관람안내</span></a></li>
+                <li class="m-2-li m-2-li-1 m-2-li-1-6"><a href="#" onclick="return false"><span class="li-text li-text-1 li-text-1-6">찾아오시는 길</span></a></li>
+              </ul>
+              <ul class="menu-2-list-box menu-2-list-box-2">
+                <li class="m-2-li m-2-li-2 m-2-li-2-1"><a href="#" onclick="return false"><span class="li-text li-text-2 li-text-2-1">독도현황</span></a></li>
+                <li class="m-2-li m-2-li-2 m-2-li-2-2"><a href="#" onclick="return false"><span class="li-text li-text-2 li-text-2-2">독도의 역사</span></a></li>
+                <li class="m-2-li m-2-li-2 m-2-li-2-3"><a href="#" onclick="return false"><span class="li-text li-text-2 li-text-2-3">독도의 자연</span></a></li>
+                <li class="m-2-li m-2-li-2 m-2-li-2-4"><a href="#" onclick="return false"><span class="li-text li-text-2 li-text-2-4">실시간 독도</span></a></li>
+              </ul>
+              <ul class="menu-2-list-box menu-2-list-box-3">
+                <li class="m-2-li m-2-li-3 m-2-li-3-1"><a href="#" onclick="return false"><span class="li-text li-text-3 li-text-3-1">독도아카데미</span></a></li>
+                <li class="m-2-li m-2-li-3 m-2-li-3-2"><a href="#" onclick="return false"><span class="li-text li-text-3 li-text-3-2">어린이 독도 교육</span></a></li>
+                <li class="m-2-li m-2-li-3 m-2-li-3-3"><a href="#" onclick="return false"><span class="li-text li-text-3 li-text-3-3">학예사와의 대화</span></a></li>
+                <li class="m-2-li m-2-li-3 m-2-li-3-4"><a href="#" onclick="return false"><span class="li-text li-text-3 li-text-3-4">독도 카드 뉴스</span></a></li>
+              </ul>
+              <ul class="menu-2-list-box menu-2-list-box-4">
+                <li class="m-2-li m-2-li-4 m-2-li-4-1"><a href="#" onclick="return false"><span class="li-text li-text-4 li-text-4-1">주요일정</span></a></li>
+                <li class="m-2-li m-2-li-4 m-2-li-4-2"><a href="#" onclick="return false"><span class="li-text li-text-4 li-text-4-2">갤러리</span></a></li>
+                <li class="m-2-li m-2-li-4 m-2-li-4-3"><a href="#" onclick="return false"><span class="li-text li-text-4 li-text-4-3">공지사항</span></a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </nav>
+      <div class="len-btn-box">
+        <p class="len-text">KOR</p>
+        <div class="len-popup-box">
+          <ul>
+            <li class="len-popup-list len-popup-list-1"><a href="#" onclick="return false">KOR</a></li>
+            <li class="len-popup-list len-popup-list-2"><a href="#" onclick="return false">ENG</a></li>
+            <li class="len-popup-list len-popup-list-3"><a href="#" onclick="return false">JAP</a></li>
+            <li class="len-popup-list len-popup-list-4"><a href="#" onclick="return false">CHN</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+ <section class="section section-1" id="section-1">
+  <div class="container">
+    <div class="back-bg back-bg-1">
+      <div class="bg-text-box bg-text-box-1">
+        <p class="bg-title bg-title-1">독도</p>
+        <p class="bg-content bg-content-1">우리의 역사와 전통이 가득한<br>
+          아름다운 섬입니다</p>
+      </div>
+    </div>
+  </div>
+ </section>
+ <section class="section section-2" id="section-2" >
+  <div class="container">
+    <div class="back-bg back-bg-2">
+      <div class="black-bg"></div>
+      <div class="bg-content-box">
+        <div class="s2-text-box" data-aos="fade-up"
+        data-aos-duration="800">
+          <p class="s2-sub-con">국내 유일의 영토박물관</p>
+          <p class="s2-title">독도박물관</p>
+        </div>
+        <div class="s2-icon-box">
+          <ul>
+            <li class="icon-list-box icon-list-box-1" data-aos="fade-up"
+            data-aos-duration="800" >
+              <div class="top-text-box">
+                <p class="s2-i-top-title">인식</p>
+                <p class="s2-i-top-sub">올바른 역사 인식 제고</p>
+              </div>
+              <div class="bottom-icon">
+                <div class="b-icon-box">
+                  <img src="icon1.png" alt="icon1">
+                </div>
+              </div>
+            </li>
+            <li class="icon-list-box icon-list-box-2" data-aos="fade-up"
+            data-aos-duration="800">
+              <div class="top-text-box">
+                <p class="s2-i-top-title">정보</p>
+                <p class="s2-i-top-sub">다양한 독도 정보 제공</p>
+              </div>
+              <div class="bottom-icon">
+                <div class="b-icon-box">
+                  <img src="icon2.png" alt="icon2">
+                </div>
+              </div>
+            </li>
+            <li class="icon-list-box icon-list-box-3" data-aos="fade-up"
+            data-aos-duration="800">
+              <div class="top-text-box">
+                <p class="s2-i-top-title">소통</p>
+                <p class="s2-i-top-sub">시민들과 소통하는 박물관</p>
+              </div>
+              <div class="bottom-icon">
+                <div class="b-icon-box">
+                  <img src="icon3.png" alt="icon3">
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+ </section>
+ <section class="section section-3" id="section-3">
+  <div class="container">
+    <div class="back-bg back-bg-3">
+      <div class="black-bg"></div>
+      <div class="bg-text-box bg-text-box-3">
+        <p class="bg-content bg-content-3"  data-aos="fade-up"
+        data-aos-duration="800">
+          독도박물관은<br>
+          지속적으로 독도 자료를<br>
+          수집·연구·교육합니다.
+        </p>
+        <div class="more-btn more-btn-3">
+          <a href="#" onclick="return false">
+            <span class="btn-text">더 알아보기</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+ </section>
+ <section class="section section-4" id="section-4">
+  <div class="container">
+    <div class="back-bg back-bg-4">
+      <div class="black-bg"></div>
+      <div class="bg-text-box bg-text-box-4">
+        <p class="bg-content bg-content-4" data-aos="fade-up"
+        data-aos-duration="800">
+          Since 1999<br>
+          독도박물관은<br>
+          독도와 함께 하고 있습니다.
+        </p>
+        <div class="more-btn more-btn-4">
+          <a href="#" onclick="return false">
+            <span class="btn-text">더 알아보기</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+ </section>
+ <section class="section section-5" id="section-5">
+  <div class="container">
+    <div class="back-bg back-bg-5">
+      <div class="black-bg"></div>
+      <div class="s5-content-box">
+        <div class="bg-text-box bg-text-box-5">
+          <p class="bg-content bg-content-5">
+            독도박물관에<br>
+            오신것을 환영합니다.
+          </p>
+          <p class="about-time">
+            ※ 운영시간 09:00 ~ 18:00<br>
+            ※ 연중무휴 (휴관 시 별도 공지)
+          </p>
+          <div class="more-btn more-btn-5">
+            <a href="#" onclick="return false">
+              <span class="btn-text">더 알아보기</span>
+            </a>
+          </div>
+        </div>
+        <div class="s5-img-box"  data-aos="fade-up"
+        data-aos-duration="800">
+          <ul>
+            <li class="exhibition exhibition-1">
+              <a href="#" onclick="return false"><img src="exhibition-1.png" alt="exhibition-1"></a>
+            </li>
+            <li class="exhibition exhibition-2">
+              <a href="#" onclick="return false"><img src="exhibition-2.png" alt="exhibition-2"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+ </section>
+ <section class="section section-6" id="section-6">
+  <div class="container">
+    <div class="back-bg back-bg-6">
+      <div class="black-bg"></div>
+      <div class="s6-content-box">
+        <div class="bg-text-box bg-text-box-6">
+          <p class="bg-content bg-content-6">
+            독도박물관의<br>
+            <span class="s6-text-color">소식</span>을 전합니다.
+          </p>
+          <div class="more-btn more-btn-6">
+            <a href="#" onclick="return false">
+              <span class="btn-text">더 알아보기</span>
+            </a>
+          </div>
+        </div>
+        <div class="news-box" data-aos="fade-up"
+        data-aos-duration="800">
+          <ul>
+            <li class="news-list news-list-1">
+              <a href="#" onclick="return false">
+                <p class="day">2023-10-10</p>
+                <p class="news-title">공지</p>
+                <p class="news-con">독도박물관 별관 특별전시관 휴관</p>
+              </a>
+            </li>
+            <li class="news-list news-list-2">
+              <a href="#" onclick="return false">
+                <p class="day">2023-09-27</p>
+                <p class="news-title">공지</p>
+                <p class="news-con">독도박물관 및 관내 전시관 추석연휴 휴관 안내</p>
+              </a>
+            </li>
+            <li class="news-list news-list-3">
+              <a href="#" onclick="return false">
+                <p class="day">2023-09-21</p>
+                <p class="news-title">공지</p>
+                <p class="news-con">제2기 독도박물관대학 인문학 강의 운영안내</p>
+              </a>
+            </li>
+            <li class="news-list news-list-4">
+              <a href="#" onclick="return false">
+                <p class="day">2023-08-10</p>
+                <p class="news-title">공지</p>
+                <p class="news-con">독도박물관 및 관내전시관 임시휴관 안내</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+ </section>
+ <section class="section section-7" id="section-7">
+  <div class="container">
+    <div class="back-bg back-bg-7">
+      <img src="s7-bg.png" alt="s7-bg">
+      <div class="s7-content" data-aos="fade-up"
+      data-aos-duration="800">
+        <div class="s7-info-box">
+          <div class="info-content">
+            <div class="s7-title">
+              <p class="title">찾아오시는 길</p>
+            </div>
+            <div class="s7-info-list">
+              <ul>
+                <li class="info-li info-li-1">
+                  <span class="info-t">주소</span>
+                  <span class="info-s">40225 경상북도 울릉군 울릉읍 약수터길 90-17번지</span>
+                </li>
+                <li class="info-li info-li-2">
+                  <p class="info-t">전화번호</p>
+                  <p class="info-s">054-790-6592</p>
+                </li>
+                <li class="info-li info-li-3">
+                  <p class="info-t">운영시간</p>
+                  <p class="info-s">09:00 ~ 18:00 / 연중무휴 (휴관 시 별도 공지)</p>
+                </li>
+              </ul>
+            </div>
+            <div class="more-btn">
+              <a href="#" onclick="return false">
+                <span class="btn-text">여객선 이용안내</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="map-img-box">
+          <img src="map.png" alt="map">
+        </div>
+      </div>
+    </div>
+  </div>
+ </section>
+ <div class="footer-section">
+  <div class="container">
+    <div class="f-logo-box"><img src="logo.png" alt="f-logo"></div>
+    <div class="info-box">
+      <div class="mu-info">
+        <p class="info info-1">[40225] 경상북도 울릉군 울릉읍 약수터길 90-17</p>
+        <p class="info info-2">TEL (054)790-6592</p>
+        <p class="info info-3">FAX (054)790-6599</p>
+      </div>
+      <div class="edu-info">
+        <p class="edu-info-text">독도아카데미 교육 문의 (054)790-6594 / E-mail : dokdomuseum1@korea.kr</p>
+      </div>
+      <div class="cop-box">
+        <p class="cop">COPYRIGHT 2021. DOKDO MUSEUM. ALL RIGHTS RESERVED.</p>
+      </div>
+    </div>
+    <div class="mark-box">
+      <a href="#" onclick="return false">
+        <img src="mark.png" alt="mark"></a>
+    </div>
+  </div>
+ </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
